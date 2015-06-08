@@ -1,0 +1,36 @@
+
+<script src="js/jquery.js"></script>
+
+<script>
+
+	$.getJSON("http://localhost/phonegap/loja/www/consulta.php", function(data) {
+	// $.get("http://t3sistemas/con.php", function(data) {
+
+	    // console.log( 'uashuashusa' );
+	    // console.log( data );
+	    // alert( data );
+	    $('#ok').html(data.nome);
+	    // $('#ok').html('sdasasdfasfasdafsdafssfd');
+
+	});
+
+</script>
+	
+
+</script>
+
+        <div style="" >
+            
+            <a href="index.html">Home</a>
+            <a href="lista.html">Lista</a>
+
+        </div>
+        
+        <div id="ok" >
+        	
+        </div>
+<?php
+
+	//echo 'sdfasdfas';
+
+?>
