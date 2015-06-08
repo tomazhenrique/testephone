@@ -1,23 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+        <title>Teste</title>
 
-<script src="js/jquery.js"></script>
+		<script src="js/jquery.js"></script>
 
-<script>
+		<script>
+			$.getJSON("http://localhost/phonegap/loja/www/consulta.php", function(data) {
+			// $.get("http://t3sistemas/con.php", function(data) {
 
-	$.getJSON("http://localhost/phonegap/loja/www/consulta.php", function(data) {
-	// $.get("http://t3sistemas/con.php", function(data) {
+			    // console.log( 'uashuashusa' );
+			    // console.log( data );
+			    // alert( data );
+			    $('#ok').html(data.nome);
+			    // $('#ok').html('sdasasdfasfasdafsdafssfd');
 
-	    // console.log( 'uashuashusa' );
-	    // console.log( data );
-	    // alert( data );
-	    $('#ok').html(data.nome);
-	    // $('#ok').html('sdasasdfasfasdafsdafssfd');
+			});
 
-	});
-
-</script>
-	
-
-</script>
+		</script>
+    </head>
+    <body>
 
         <div style="" >
             
@@ -29,8 +37,3 @@
         <div id="ok" >
         	
         </div>
-<?php
-
-	//echo 'sdfasdfas';
-
-?>
